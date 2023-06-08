@@ -18,7 +18,7 @@ st.markdown('The data shon below belongs to incident reports in the city of San 
 
 mapa = pd.DataFrame()
 mapa = mapa.dropna()
-st.map(mapa.astype(int))
+st.map(df[['Latitude','Longitude']])
 
 '''
 mapa['Date']= df['Incident Date']
