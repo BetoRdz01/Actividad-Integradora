@@ -29,5 +29,5 @@ mapa['lon']=df['Longitude']
 mapa = mapa.dropna()
 st.map(mapa.astype(int))
 
-st.title('Police Incident Reports from 2028 to 2022 in San Francisco.')
+st.title('The Police Incident Reports from 2028 to 2022 in San Francisco.')
 st.markdown('The data shon below belongs to incident reports in the city of San Francisco, from the year 2018 to 2020, with details from each case sucha as date, day of the week, police district, neighborhood in which it happened, type of incident in category and subcategory, exact location and resolution')
