@@ -16,11 +16,9 @@ df = pd.read_csv('https://drive.google.com/file/d/1WQ5QFkP9S1FfpAxCTxQpzWKEP5lD6
 st.title('The Police Incident Reports from 2018 to 2022 in San Francisco.')
 st.markdown('The data shon below belongs to incident reports in the city of San Francisco, from the year 2018 to 2020, with details from each case sucha as date, day of the week, police district, neighborhood in which it happened, type of incident in category and subcategory, exact location and resolution')
 
-mapa = pd.DataFrame()
+mapa = pd.DataFrame(df['Latitude'],df['Longitude'])
 mapa = mapa.dropna()
-mapa=df[['Latitude','Longitude']]
-print(mapa)
-st.map(mapa)
+st.map(mapa.astype(int))
 
 '''
 mapa['Date']= df['Incident Date']
