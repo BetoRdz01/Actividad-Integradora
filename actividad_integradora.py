@@ -12,7 +12,7 @@ Original file is located at
 import pandas as pd
 import streamlit as st
 
-df = pd.read_csv('Police.csv')
+df = pd.read_csv('https://drive.google.com/file/d/1WQ5QFkP9S1FfpAxCTxQpzWKEP5lD67uL/view?usp=drive_link')
 
 mapa = pd.DataFrame()
 '''
